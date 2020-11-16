@@ -12,7 +12,7 @@ import UIKit
 public class XBBaseCollectionManager: NSObject {
     
     public var sectionArray = [XBBaseSectionModel]()
-    weak public var collectionView : UICollectionView!
+    public var collectionView : UICollectionView!
     weak public var delegate : XBCollectionManagerDelegate?
     
     lazy var flowLayout: UICollectionViewFlowLayout = {

@@ -3,7 +3,7 @@ use_frameworks!
 inhibit_all_warnings!
 #公有库
 
-target "XBLibsDemo" do
+target "XBLibsCoreDemo" do
 
     pod 'XBLibsCore', :path => './'
     pod 'RxSwift'

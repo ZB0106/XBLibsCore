@@ -1,0 +1,58 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Differentiator (4.0.1)
+  - MJRefresh (3.5.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+  - SnapKit (4.2.0)
+  - XBLibsCore (0.0.3):
+    - XBLibsCore/XBListViewManager (= 0.0.3)
+  - XBLibsCore/XBListViewManager (0.0.3):
+    - MJRefresh
+    - SnapKit
+
+DEPENDENCIES:
+  - Alamofire
+  - RxCocoa
+  - RxDataSources
+  - RxSwift
+  - SnapKit
+  - XBLibsCore (from `./`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Differentiator
+    - MJRefresh
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SnapKit
+
+EXTERNAL SOURCES:
+  XBLibsCore:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  XBLibsCore: bc1e97a6d550d93686d842cea12a91e24143872b
+
+PODFILE CHECKSUM: 348178a1cd4035798893b9a79da2dcddc39f1514
+
+COCOAPODS: 1.9.3

@@ -12,7 +12,7 @@ public class XBBaseTableViewManager: NSObject {
     
     public var sectionArray = [XBBaseSectionModel]()
     weak public var delegate: XBTableViewManagerDelegate?
-    weak public var tableView: UITableView!
+    public var tableView: UITableView!
     func createTableView(style: UITableView.Style = .grouped, separatorStyle: UITableViewCell.SeparatorStyle = .none) -> UITableView {
         let temTableView = UITableView.init(frame: .zero, style: style)
         temTableView.delegate = self

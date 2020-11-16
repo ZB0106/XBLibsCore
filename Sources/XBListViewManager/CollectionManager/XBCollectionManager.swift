@@ -15,7 +15,7 @@ public class XBCollectionManager: NSObject {
    
     weak private var emptyView: UIView?
     public var sectionArray = [XBSecModelProtocol]()
-    weak public var collectionView : UICollectionView!
+    public var collectionView : UICollectionView!
     weak public var delegate : XBCollectionManagerDelegate?
     
     lazy var flowLayout: UICollectionViewFlowLayout = {

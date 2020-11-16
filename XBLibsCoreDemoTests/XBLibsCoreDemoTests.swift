@@ -1,14 +1,14 @@
 //
-//  XBLibsDemoTests.swift
-//  XBLibsDemoTests
+//  XBLibsCoreDemoTests.swift
+//  XBLibsCoreDemoTests
 //
-//  Created by 苹果兵 on 2020/11/15.
+//  Created by xbing on 2020/11/16.
 //
 
 import XCTest
-@testable import XBLibsDemo
+@testable import XBLibsCoreDemo
 
-class XBLibsDemoTests: XCTestCase {
+class XBLibsCoreDemoTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

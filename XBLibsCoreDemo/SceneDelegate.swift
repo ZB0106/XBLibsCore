@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  XBLibsDemo
+//  XBLibsCoreDemo
 //
-//  Created by 苹果兵 on 2020/11/15.
+//  Created by xbing on 2020/11/16.
 //
 
 import UIKit
