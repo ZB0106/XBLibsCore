@@ -68,7 +68,7 @@
 		765C92D025620992008C2D96 /* XBLibsCoreDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XBLibsCoreDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		765C92D425620992008C2D96 /* XBLibsCoreDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XBLibsCoreDemoUITests.swift; sourceTree = "<group>"; };
 		765C92D625620992008C2D96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		765C92E8256209D0008C2D96 /* XBLibsCore.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XBLibsCore.podspec; sourceTree = "<group>"; };
+		765C92E8256209D0008C2D96 /* XBLibsCore.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XBLibsCore.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		765C92F0256209D5008C2D96 /* XBDequeueReusableManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XBDequeueReusableManager.swift; sourceTree = "<group>"; };
 		765C92F1256209D5008C2D96 /* XBBaseModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XBBaseModels.swift; sourceTree = "<group>"; };
 		765C92F2256209D5008C2D96 /* XBListViewConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XBListViewConst.swift; sourceTree = "<group>"; };

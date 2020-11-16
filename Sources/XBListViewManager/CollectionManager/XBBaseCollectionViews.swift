@@ -7,12 +7,12 @@
 
 import UIKit
 
-class XBBaseCollectionCell: UICollectionViewCell {
+open class XBBaseCollectionCell: UICollectionViewCell {
     
     weak open var delegate : XBCollectionCelldelegate?
     open var dataModel : XBBaseDataModel!
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     override init(frame: CGRect) {
@@ -32,12 +32,12 @@ extension XBBaseCollectionCell {
 }
 
 
-class XBBaseCollectionSecView: UICollectionReusableView {
+open class XBBaseCollectionSecView: UICollectionReusableView {
     
     
     weak open var delegate : XBCollectionSectionViewdelegate?
     var secModel : XBBaseSectionModel!
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     override init(frame: CGRect) {

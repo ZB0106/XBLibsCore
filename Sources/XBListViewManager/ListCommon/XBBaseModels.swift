@@ -8,7 +8,7 @@
 
 import UIKit
 import Foundation
-public class XBBaseDataModel : NSObject {
+open class XBBaseDataModel : NSObject {
     var isSelected = false
     var isEdit = false
     var cellSize = CGSize.zero
@@ -19,7 +19,7 @@ public class XBBaseDataModel : NSObject {
     
 }
 
-public class XBBaseSectionModel {
+open class XBBaseSectionModel {
 //    CGSize.init(width: 0, height: 0.0001)
     var isClose = false
     var isEmpty = false
