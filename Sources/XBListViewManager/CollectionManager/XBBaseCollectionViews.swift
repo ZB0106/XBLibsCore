@@ -23,10 +23,10 @@ open class XBBaseCollectionCell: UICollectionViewCell {
     }
 }
 extension XBBaseCollectionCell {
-    @objc func makeLayoutSubViews() {
+    @objc open func makeLayoutSubViews() {
        
     }
-    @objc func makeAddSubViews() {
+    @objc open func makeAddSubViews() {
        
     }
 }
@@ -50,10 +50,10 @@ open class XBBaseCollectionSecView: UICollectionReusableView {
 }
 extension XBBaseCollectionSecView  {
     
-   @objc func makeAddSubViews() {
+   @objc open func makeAddSubViews() {
         
     }
-    @objc func makeLayoutSubViews() {
+    @objc open func makeLayoutSubViews() {
         
     }
 }

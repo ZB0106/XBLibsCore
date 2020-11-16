@@ -28,10 +28,10 @@ open class XBBaseTableCell: UITableViewCell {
     }
 }
 extension XBBaseTableCell  {
-    @objc func makeLayoutSubViews() {
+    @objc open func makeLayoutSubViews() {
         
     }
-    @objc func makeAddSubViews() {
+    @objc open func makeAddSubViews() {
         
     }
 }
@@ -52,10 +52,10 @@ open class XBBaseTableSectionView: UITableViewHeaderFooterView {
     }
 }
 extension XBBaseTableSectionView  {
-    @objc func makeLayoutSubViews() {
+    @objc open func makeLayoutSubViews() {
         
     }
-    @objc func makeAddSubViews() {
+    @objc open func makeAddSubViews() {
         
     }
 }

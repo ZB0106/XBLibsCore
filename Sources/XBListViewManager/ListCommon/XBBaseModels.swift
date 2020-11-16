@@ -9,42 +9,42 @@
 import UIKit
 import Foundation
 open class XBBaseDataModel : NSObject {
-    var isSelected = false
-    var isEdit = false
-    var cellSize = CGSize.zero
-    var editCellSize = CGSize.zero
-    var defaultCellSize = CGSize.zero
-    var cellClass: String?
+    public var isSelected = false
+    public var isEdit = false
+    public var cellSize = CGSize.zero
+    public var editCellSize = CGSize.zero
+    public var defaultCellSize = CGSize.zero
+    public var cellClass: String?
     
     
 }
 
 open class XBBaseSectionModel {
 //    CGSize.init(width: 0, height: 0.0001)
-    var isClose = false
-    var isEmpty = false
-    var emptySize = XBListDefaultSecSize
-    var emptyClass: String?
+    public var isClose = false
+    public var isEmpty = false
+    public var emptySize = XBListDefaultSecSize
+    public var emptyClass: String?
     
-    var headerSize = XBListDefaultSecSize
-    var footerSize = XBListDefaultSecSize
-    var defaultHeaderSize = XBListDefaultSecSize
-    var defaultFooterSize = XBListDefaultSecSize
-    var editHeaderSize = XBListDefaultSecSize
-    var editFooterSize = XBListDefaultSecSize
+    public var headerSize = XBListDefaultSecSize
+    public var footerSize = XBListDefaultSecSize
+    public var defaultHeaderSize = XBListDefaultSecSize
+    public var defaultFooterSize = XBListDefaultSecSize
+    public var editHeaderSize = XBListDefaultSecSize
+    public var editFooterSize = XBListDefaultSecSize
     
-    var edgeInsets = UIEdgeInsets.zero
-    var lineSpace: CGFloat = 0
-    var rowSpace: CGFloat = 0
+    public var edgeInsets = UIEdgeInsets.zero
+    public var lineSpace: CGFloat = 0
+    public var rowSpace: CGFloat = 0
     
-    var headerClass : String?
-    var footerClass : String?
+    public var headerClass : String?
+    public var footerClass : String?
     
-    var isEdit = false
-    var isFooterEdit = false
-    var isSelected = false
+    public var isEdit = false
+    public var isFooterEdit = false
+    public var isSelected = false
     
-    var items = [XBBaseDataModel]()
+    public var items = [XBBaseDataModel]()
     
     
 }
