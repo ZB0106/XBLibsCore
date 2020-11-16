@@ -14,35 +14,39 @@ public enum XBDownLineType {
 }
 
 public struct XBMenuButtonComponents {
-    var title: String?
-    var downlineType = XBDownLineType.long
-    var titleColor = UIColor.black
-    var _selTitleColor: UIColor?
-    var selTitleColor: UIColor? {
+    public var title: String?
+    public var downlineType = XBDownLineType.long
+    public var titleColor = UIColor.black
+    public var _selTitleColor: UIColor?
+    public var selTitleColor: UIColor? {
         get {_selTitleColor != nil ? _selTitleColor : titleColor}
         set {_selTitleColor = newValue}
     }
-    var imgName: String?
-    var _selImgName: String?
-    var selImgName: String? {
+    public var imgName: String?
+    public var _selImgName: String?
+    public var selImgName: String? {
         get {_selImgName != nil ? _selImgName : imgName}
         set {_selImgName = newValue}
     }
-    var downLineColor = UIColor.clear
-    var downLineSelColor = UIColor.clear
-    var font = UIFont.systemFont(ofSize: 16.0, weight: .regular)
-    var _selFont: UIFont?
-    var selFont: UIFont? {
+    public var downLineColor = UIColor.clear
+    public var downLineSelColor = UIColor.clear
+    public var font = UIFont.systemFont(ofSize: 16.0, weight: .regular)
+    public var _selFont: UIFont?
+    public var selFont: UIFont? {
         get {_selFont != nil ? _selFont : font}
         set {_selFont = newValue}
     }
-    var downLineWidth: CGFloat = 0.0
-    var downLineHeight: CGFloat = 2.0
-    var target: Any?
-    var action: Selector?
-    var event: UIControl.Event = .touchUpInside
-    var horiAliment: UIControl.ContentHorizontalAlignment = .center
-    var verAliment: UIControl.ContentVerticalAlignment = .center
+    public var downLineWidth: CGFloat = 0.0
+    public var downLineHeight: CGFloat = 2.0
+    public var target: Any?
+    public var action: Selector?
+    public var event: UIControl.Event = .touchUpInside
+    public var horiAliment: UIControl.ContentHorizontalAlignment = .center
+    public var verAliment: UIControl.ContentVerticalAlignment = .center
+    
+    public init() {
+        
+    }
     
 }
 
