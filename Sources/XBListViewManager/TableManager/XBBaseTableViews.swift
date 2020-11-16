@@ -10,7 +10,7 @@ import UIKit
 //MARK: XBBaseTableCell
 open class XBBaseTableCell: UITableViewCell {
     weak open var delegate: XBTableCelldelegate?
-    public var dataModel: XBBaseDataModel!
+    public var indexPath: IndexPath!
     public override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -28,6 +28,9 @@ open class XBBaseTableCell: UITableViewCell {
     }
 }
 extension XBBaseTableCell  {
+    @objc open func configureCellData(_ item: XBBaseDataModel) {
+        
+    }
     @objc open func makeLayoutSubViews() {
         
     }
@@ -39,7 +42,7 @@ extension XBBaseTableCell  {
 //MARK: XBBaseTableSectionView
 open class XBBaseTableSectionView: UITableViewHeaderFooterView {
     weak open var delegate: XBTableSecViewdelegate?
-    public var secModel: XBBaseSectionModel!
+    public var section: Int!
     required public override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
         contentView .backgroundColor = UIColor.white
@@ -52,6 +55,9 @@ open class XBBaseTableSectionView: UITableViewHeaderFooterView {
     }
 }
 extension XBBaseTableSectionView  {
+    @objc open func configureSecViewData(_ section: XBBaseSectionModel) {
+        
+    }
     @objc open func makeLayoutSubViews() {
         
     }

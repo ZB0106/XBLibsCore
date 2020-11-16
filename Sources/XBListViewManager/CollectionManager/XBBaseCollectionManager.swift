@@ -96,7 +96,8 @@ extension XBBaseCollectionManager : UICollectionViewDataSource {
             clsType = XBBaseCollectionCell.self
         }
         collectionCell = collectionView.XBDequeueReusableCollectionCell(withClassName: clsName, clsType: clsType, for: indexPath) as? XBBaseCollectionCell
-        collectionCell!.dataModel = dataModel
+        collectionCell!.configureCellData(dataModel)
+        collectionCell?.indexPath = indexPath
         collectionCell!.delegate = self
         return collectionCell!
     }
@@ -125,7 +126,8 @@ extension XBBaseCollectionManager : UICollectionViewDataSource {
             clsType = UICollectionReusableView.self
         }
         let view = collectionView.XBDequeueReusableSupplementaryView(withClassName: clsName, clsType: clsType, ofKind: kind, for: indexPath) as! XBBaseCollectionSecView
-        view.secModel = secModel
+        view.configureSecViewData(secModel)
+        view.indexPath = indexPath
         view.delegate = self
         return view
     }

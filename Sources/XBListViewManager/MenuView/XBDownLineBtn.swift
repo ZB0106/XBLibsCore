@@ -17,13 +17,13 @@ public struct XBMenuButtonComponents {
     public var title: String?
     public var downlineType = XBDownLineType.long
     public var titleColor = UIColor.black
-    public var _selTitleColor: UIColor?
+    private var _selTitleColor: UIColor?
     public var selTitleColor: UIColor? {
         get {_selTitleColor != nil ? _selTitleColor : titleColor}
         set {_selTitleColor = newValue}
     }
     public var imgName: String?
-    public var _selImgName: String?
+    private var _selImgName: String?
     public var selImgName: String? {
         get {_selImgName != nil ? _selImgName : imgName}
         set {_selImgName = newValue}
@@ -31,7 +31,7 @@ public struct XBMenuButtonComponents {
     public var downLineColor = UIColor.clear
     public var downLineSelColor = UIColor.clear
     public var font = UIFont.systemFont(ofSize: 16.0, weight: .regular)
-    public var _selFont: UIFont?
+    private var _selFont: UIFont?
     public var selFont: UIFont? {
         get {_selFont != nil ? _selFont : font}
         set {_selFont = newValue}

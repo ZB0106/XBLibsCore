@@ -86,7 +86,8 @@ extension XBBaseTableViewManager : UITableViewDataSource {
             clsType = XBBaseTableCell.self
         }
         cell = tableView.XBDequeueReusableTableCell(withClassName: clsName, clsType: clsType) as? XBBaseTableCell
-        cell?.dataModel = dataModel
+        cell?.configureCellData(dataModel)
+        cell?.indexPath = indexPath
         cell?.delegate = self
         
         return cell!
@@ -112,7 +113,8 @@ extension XBBaseTableViewManager : UITableViewDataSource {
             clsType = XBBaseTableSectionView.self
         }
         let view = tableView.XBDequeueReusableHeaderFooterView(withClassName: clsName, clsType: clsType) as? XBBaseTableSectionView
-        view?.secModel = secModel
+        view?.configureSecViewData(secModel)
+        view?.section = section
         view?.delegate = self
         return view
     }
@@ -136,7 +138,8 @@ extension XBBaseTableViewManager : UITableViewDataSource {
             clsType = XBBaseTableSectionView.self
         }
         let view = tableView.XBDequeueReusableHeaderFooterView(withClassName: clsName, clsType: clsType) as? XBBaseTableSectionView
-        view?.secModel = secModel
+        view?.configureSecViewData(secModel)
+        view?.section = section
         view?.delegate = self
         return view
     }
