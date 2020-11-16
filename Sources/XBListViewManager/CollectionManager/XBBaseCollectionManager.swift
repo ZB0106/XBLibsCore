@@ -123,7 +123,7 @@ extension XBBaseCollectionManager : UICollectionViewDataSource {
         }
         if clsName.count == 0 || clsType == nil {
             clsName = NSStringFromClass(XBBaseCollectionSecView.self)
-            clsType = UICollectionReusableView.self
+            clsType = XBBaseCollectionSecView.self
         }
         let view = collectionView.XBDequeueReusableSupplementaryView(withClassName: clsName, clsType: clsType, ofKind: kind, for: indexPath) as! XBBaseCollectionSecView
         view.configureSecViewData(secModel)
